@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anamul Hoque</title>
+  <meta name="description" content="Anamul Hoque's personal website." />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Hind Siliguri', sans-serif;
+      line-height: 1.6;
+      background: #a0e5d8; /* Light mint green background */
+      color: #333;
+    }
+
+    .top-bar {
+      background: #002244;
+      padding: 10px;
+      font-size: 14px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+      color: #FFD700;
+    }
+
+    .top-bar a {
+      color: #FFD700;
+      text-decoration: none;
+      margin: 0 8px;
+      font-weight: bold;
+    }
+
+    .lang-switch { font-size: 16px; font-weight: bold; }
+
+    header {
+      background-image: url('https://i.imgur.com/35XZpkF.jpeg');
+      background-size: cover;
+      background-position: center;
+      height: 30vh;
+      position: relative;
+      color: white;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0 30px;
+    }
+
+    .header-content h1 {
+      font-size: 48px;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px black;
+      margin-bottom: 25px;
+      line-height: 1.1; /* Reduced line height */
+    }
+
+    nav {
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 6px 12px;
+      border-radius: 5px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 5px 10px;
+      font-size: 14px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    .hero {
+      background: #005b8f;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      margin-top: 30px; /* Added gap between header and hero */
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 60px 0;
+    }
+
+    .service-card {
+      background: #f7f7f7;
+      padding: 30px;
+      border-radius: 8px;
+      text-align: center;
+      flex: 1 1 300px;
+      max-width: 320px;
+    }
+
+    .orange { background: #f39c12; color: white; }
+    .blue { background: #3498db; color: white; }
+
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+      padding: 60px 0;
+    }
+
+    .about-text { flex: 1 1 50%; }
+    .about-image { flex: 1 1 40%; }
+    .about-image img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .contact {
+      background: #002244;
+      color: #FFD700;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .contact a {
+      color: #FFD700;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer {
+      background: #222;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .social-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    @media (max-width: 768px) {
+      .about { flex-direction: column; }
+      .top-bar { font-size: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <a href="tel:01943436676"> Call: 01943436676</a> |
+    <a href="mailto:anamul.bpi30@gmail.com">Email: anamul.bpi30@gmail.com</a> |
+    <a href="https://www.google.com/maps?q=Kroirgacha,+Harirampur,+Gobindganj,+Gaibandha" target="_blank">Address: Kroirgacha, Harirampur, Gobindganj, Gaibandha.</a>
+    <a href="index.html" class="lang-switch">BN</a>
+  </div>
+
+  <header>
+    <div class="header-content">
+      <h1>ANAMUL HOQUE</h1>
+      <nav>
+  <ul>
+    <li><a href="#home" style="color: #FFD700;">Home</a></li>
+    <li><a href="#about" style="color: #FFD700;">About Me</a></li>
+    <li><a href="#services" style="color: #FFD700;">Programs</a></li>
+    <li><a href="#contact" style="color: #FFD700;">Contact</a></li>
+    <li><a href="#blog" style="color: #FFD700;">My Studies</a></li>
+  </ul>
+</nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>"Be patient, surely Allah is with those who are patient."
+— (Surah Al-Baqarah 2:153).</h1>
+      <p>"And my success is only possible with the help of Allah."
+— (Surah Hud 11:88).</p>
+
+    </div>
+  </section>
+
+  <section id="services" class="container services">
+    <div class="service-card">
+      <h3>Hard Work</h3>
+      <p>"The better the effort, the better the outcome."</p>
+    </div>
+    <div class="service-card orange">
+      <h3>Be the Change</h3>
+      <p>"Be the change you wish to see in the world."</p>
+    </div>
+    <div class="service-card blue">
+      <h3>Life is Tough,</h3>
+      <p>"But only the brave succeed."</p>
+    </div>
+  </section>
+
+  <section id="about" class="container about">
+    <div class="about-image" style="text-align:center; margin-bottom: 10px;">
+      <img src="https://i.imgur.com/51nNDDi.jpeg" alt="Anamul Hoque's Photo" style="max-width: 250px; border: 3px solid #000000; border-radius: 10px;">
+    </div>
+    <div class="about-text">
+      <h2 style="color: #f39c12;">About Anamul Hoque</h2>
+      <p id="about-text" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">
+        I was born and raised in the village of Kroirgacha, Harirampur Union, Gobindganj, Gaibandha. I completed my primary education in my village's school. Later, I graduated from Gaibandha Technical School & College with an SSC in 2020 and completed my Diploma in Mechanical Technology from Bogura Polytechnic Institute. Currently, I am preparing for a job while studying in Gazipur.
+
+It is the inspiration from my father and mother that gives me the courage to move forward. Their love, sacrifices, and life philosophies are the guiding principles of my life. I aim to improve and grow myself daily, accepting my limitations.
+
+As a middle-class person, I dream with caution. I don't desire luxury before need, and every step I take is bound by responsibility. Though adversity brings tears, I never lose hope. I carry my self-respect above all.
+      </p>
+      <button onclick="toggleAbout()" style="margin-top: 10px; padding: 8px 15px; border: none; background: #f39c12; color: white; border-radius: 5px; font-weight: bold;">
+        Read More
+      </button>
+      <script>
+        function toggleAbout() {
+          var text = document.getElementById("about-text");
+          var button = event.target;
+          if (text.style.webkitLineClamp === "3") {
+            text.style.webkitLineClamp = "unset";
+            button.innerText = "Show Less";
+          } else {
+            text.style.webkitLineClamp = "3";
+            button.innerText = "Read More";
+          }
+        }
+      </script>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p><a href="tel:01943436676">Phone: 01943436676</a> | <a href="mailto:anamul.bpi30@gmail.com">Email: anamul.bpi30@gmail.com</a></p>
+      <p><a href="https://www.google.com/maps?q=Kroirgacha,+Harirampur,+Gobindganj,+Gaibandha" target="_blank">Address: Kroirgacha, Harirampur, Gobindganj, Gaibandha.</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Anamul Hoque. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/anamul.bpi30" target="_blank">Facebook</a>
+        <a href="https://wa.me/8801522101268" target="_blank">WhatsApp</a>
+        <a href="https://www.instagram.com/anamul.bpi30" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
